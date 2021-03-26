@@ -1,0 +1,45 @@
+{
+  "name": "aws-elasticsearch",
+  "version": "1.0.0",
+  "description": "Use elasticsearch-js with Amazon ES",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gosquared/aws-elasticsearch-js.git"
+  },
+  "keywords": [
+    "aws",
+    "elasticsearch",
+    "js",
+    "elastic",
+    "connector",
+    "sign",
+    "iam",
+    "amazon",
+    "es",
+    "signer"
+  ],
+  "author": "Geoff Wagstaff <geoff@gosquared.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gosquared/aws-elasticsearch-js/issues"
+  },
+  "homepage": "https://github.com/gosquared/aws-elasticsearch-js#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.12.0",
+    "aws-sdk": "^2.873.0",
+    "debug": "^4.3.1",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "faker": "^5.5.0",
+    "mocha": "^8.3.2"
+  }
+}
