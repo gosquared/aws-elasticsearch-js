@@ -14,7 +14,8 @@ function isStream(obj) {
   return typeof obj.pipe === 'function';
 }
 
-function createConnector({ region, getCreds }) {
+function createConnector(opts = {}) {
+  let { region, getCreds } = opts;
   region = region || process.env.AWS_REGION;
   if (!getCreds) getCreds = cb => AWS.config.getCredentials(cb);
 
