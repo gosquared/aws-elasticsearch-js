@@ -1,6 +1,8 @@
 # AWS Elasticsearch
 Use Elastic's official [elasticsearch-js](https://github.com/elastic/elasticsearch-js) with Amazon Elasticsearch.
 
+[![npm version](https://badge.fury.io/js/aws-elasticsearch-js.svg)](https://badge.fury.io/js/aws-elasticsearch-js)
+
 # Install
     npm i aws-elasticsearch-js
 
