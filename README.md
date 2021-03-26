@@ -2,12 +2,12 @@
 Use Elastic's official [elasticsearch-js](https://github.com/elastic/elasticsearch-js) with Amazon Elasticsearch.
 
 # Install
-    npm i aws-elasticsearch
+    npm i aws-elasticsearch-js
 
 # Usage
 ```js
 const elasticsearch = require('@elastic/elasticsearch');
-const { createConnector } = require('aws-elasticsearch');
+const { createConnector } = require('aws-elasticsearch-js');
 
 const region = process.env.AWS_REGION || 'us-east-1';
 const domain = 'https://domain-1-abc123.region.es.amazonaws.com/';
