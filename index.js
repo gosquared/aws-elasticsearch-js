@@ -114,20 +114,6 @@ function createConnector(opts = {}) {
         // Disables the Nagle algorithm
         request.setNoDelay(true)
 
-        // starts the request
-        if (isStream(params.body) === true) {
-          pump(params.body, request, err => {
-            /* istanbul ignore if  */
-            if (err != null && cleanedListeners === false) {
-              cleanListeners()
-              this._openRequests--
-              callback(err, null)
-            }
-          })
-        } else {
-          request.end(params.body)
-        }
-
         function cleanListeners () {
           request.removeListener('response', onResponse)
           request.removeListener('timeout', onTimeout)
