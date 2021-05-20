@@ -21,7 +21,7 @@ const client = new elasticsearch.Client({
 
 // use in the normal way
 async function example() {
-  await client.index({ index: 'test', doc: { test: 'hello' } });
+  await client.index({ index: 'test', body: { test: 'hello' } });
   await client.indices.refresh();
   let result = await client.search({ index: 'test' });
 }
